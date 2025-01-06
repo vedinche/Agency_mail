@@ -36,14 +36,6 @@
         color: #e8fbfa;
       }
 
-      .main-bg {
-        background: url('https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/hero-bg.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        max-width: 600px;
-      }
-
       .pt {
         padding-top: 30px;
       }
@@ -63,10 +55,8 @@
       .btn {
         font-weight: 600;
         font-size: 14px;
-        line-height: 24px;
         text-align: center;
         color: #ffffff;
-        text-decoration: none;
         border-radius: 45px;
         background-color: #84f;
       }
@@ -75,7 +65,7 @@
         font-family: 'Poppins', sans-serif;
         width: 100%;
         height: 100%;
-        text-align: center;
+        line-height: 24px;
         text-decoration: none;
         color: #ffffff;
       }
@@ -90,6 +80,15 @@
         color: #191919;
       }
 
+      .section-subtitle {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 34px;
+        color: #191919;
+      }
+
       .text {
         margin: 0;
         font-family: 'Poppins', sans-serif;
@@ -99,12 +98,29 @@
         color: #595959;
       }
 
-      .desctop-table {
-        display: block;
+      .hero-bg {
+        background: url('https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/hero-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        max-width: 600px;
       }
 
-      .overlap {
-        margin-top: -30px;
+      .connect-bg {
+        background: url('https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/connect.png');
+        background-repeat: no-repeat;
+        block-size: cover;
+        width: 100%;
+        max-width: 600px;
+      }
+
+      .help-bg {
+        background: url('https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/help-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        max-width: 600px;
+
       }
 
       @media screen and (max-width: 599.98px) {
@@ -136,14 +152,6 @@
           padding-right: 0 !important;
         }
 
-        .desctop-table {
-          display: none !important;
-        }
-
-        .mobile-table {
-          display: block !important;
-        }
-
         .projects {
           padding-right: 0 !important;
         }
@@ -160,6 +168,50 @@
           padding-right: 40px !important;
         }
 
+        .connect-left {
+          padding-right: 0 !important;
+        }
+
+        .team-designer {
+          padding-bottom: 20px !important;
+          padding-right: 0 !important;
+        }
+
+        .team-developer {
+          padding-left: 0 !important;
+        }
+
+        .testimonial-card {
+          margin-bottom: 20px !important;
+        }
+
+        .article-img {
+          max-width: 300px !important;
+        }
+
+        .footer-address {
+          padding-right: 0 !important;
+          padding-bottom: 20px !important;
+        }
+
+        .footer-contact {
+          padding-right: 0 !important;
+        }
+
+        .footer-copy {
+          max-width: 200px !important;
+          font-size: 10px !important;
+        }
+
+        .unsubscribe {
+          font-size: 10px !important;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        h1 {
+          color: #000000 !important;
+        }
       }
 
       @media screen and (max-width: 399.98px) {}
@@ -169,19 +221,7 @@
         color-scheme: light dark;
         supported-color-schemes: light dark;
       }
-
-      @media (prefers-color-scheme: dark) {
-        .main {
-          background-color: #000000 !important;
-        }
-
-        .main-bg-none {
-          background: none !important;
-        }
-
-        h1 {
-          color: #ffffff !important;
-        } */
+      */
     </style>
 
     <!--[if (gte mso 9)|(IE)]>
@@ -280,22 +320,64 @@
                 href="#!" target="blank">Get Flat 30% Off</a>
             </td>
           </tr>
-          <!-- header-end -->
+          <!-- header-top-end -->
+
+          <!-- header-bottom -->
+          <tr>
+            <td align="center" class="pt pb mobile-padding">
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                style="width: 230px;" width="230">
+                <tr>
+                  <td align="center" style="padding: 0 0 14px 0;">
+                    <a href="#!" target="_blank">
+                      <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/logo.png"
+                        alt="logo" width="130" height="37" />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center">
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;">
+                      <tr>
+                        <td>
+                          <a style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; line-height: 24px; color: #191919;"
+                            href="#!" target="_blank">Home</a>
+                        </td>
+                        <td>
+                          <a style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; line-height: 24px; color: #191919;"
+                            href="#!" target="_blank">About</a>
+                        </td>
+                        <td>
+                          <a style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; line-height: 24px; color: #191919;"
+                            href="#!" target="_blank">Blog</a>
+                        </td>
+                        <td>
+                          <a style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; line-height: 24px; color: #191919;"
+                            href="#!" target="_blank">Sale</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- header-bottom-end -->
 
           <!-- hero -->
           <tr>
             <td class="pb">
               <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                style="width: 100%; max-width: 600px; background-color: #f5f8fa;" class="main">
+                style="width: 100%; max-width: 600px; background-color: #f5f8fa;">
                 <tr>
-                  <td align="center" class="mobile-padding main-bg main-bg-none"
-                    widt="600" height="428">
+                  <td align="center" class="mobile-padding hero-bg"
+                    width="600" height="428">
                     <table style="width: 100%; max-width: 386px;" border="0" cellspacing="0" cellpadding="0"
                       role="presentation">
                       <tr>
                         <td align="center" style="padding: 0 0 10px 0;">
                           <h1
-                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 36px; line-height: 46px; text-align: center; color: #000000;">
+                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 36px; line-height: 46px; text-align: center;">
                             New Business
                             Solutions And Ideas
                           </h1>
@@ -314,7 +396,7 @@
                         <td align="center">
                           <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                             <tr>
-                              <td align="center" class="btn" style="padding: 10px 0 10px 0;" width="148">
+                              <td align="center" class="btn" style="width: 148px; height: 44px;">
                                 <a href="#!" target="_blank">
                                   LEARN MORE
                                 </a>
@@ -331,8 +413,6 @@
           </tr>
           <!-- hero end -->
 
-          <!-- main -->
-
           <!-- social -->
           <tr>
             <td align="center" class="pb pr pl mobile-padding">
@@ -343,14 +423,14 @@
                     <a href="#!" target="blank" style="text-decoration: none;">
                       <img class="social-img"
                         src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/webflow-bg.png"
-                        alt="webflow" style="border: none; max-width: 100%;">
+                        alt="webflow" style="border: none; max-width: 100%;" />
                     </a>
                   </td>
                   <td align="center" style="font-size: 0; line-height: 0; text-decoration: none;">
                     <a href="#!" target="blank" style="text-decoration: none;">
                       <img class="social-img"
                         src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/Facebook-bg.png"
-                        alt="facebook" style="border: none; max-width: 100%;">
+                        alt="facebook" style="border: none; max-width: 100%;" />
                     </a>
                   </td>
                   <td align="right">
@@ -358,7 +438,7 @@
                       target="blank" style="font-size: 0; line-height: 0; text-decoration: none;">
                       <img class="social-img"
                         src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/YouTube-bg.png"
-                        alt="youtube" style="border: none; max-width: 100%;">
+                        alt="youtube" style="border: none; max-width: 100%;" />
                     </a>
                   </td>
                 </tr>
@@ -381,7 +461,7 @@
                   <td class="card-img" style="font-size: 0; line-height: 0; padding: 0 10px 0 0;">
                     <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/who-we-are.png"
                       alt="who we are" style="width: 100%; max-width: 250px; border: 0;" width="250"
-                      height="350">
+                      height="350" />
                   </td>
                 </tr>
               </table>
@@ -395,8 +475,8 @@
                   <td style="padding-bottom: 12px">
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
-                        <td class="btn" style="width: 110px; height: 28px;">
-                          <a href="#!" target="_blank">WHO WE ARE</a>
+                        <td class="btn" style="width: 112px; height: 28px;">
+                          <a href="#!" target="_blank">&nbsp;&nbsp;&nbsp;WHO&nbsp;WE&nbsp;ARE&nbsp;&nbsp;&nbsp;</a>
                         </td>
                       </tr>
                     </table>
@@ -407,14 +487,13 @@
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
                         <td>
-                          <h3
-                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 24px; line-height: 34px; color: #191919;">
+                          <h3 class="section-subtitle">
                             We're a Team of Talented Designer
                           </h3>
                         </td>
                       </tr>
                       <tr>
-                        <td style="padding: 0 0 20px 0;">
+                        <td style="padding: 0 0 10px 0;">
                           <p
                             style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #595959;">
                             Lorem Ipsum is&nbsp;simply dummy text of&nbsp;the printing.
@@ -425,7 +504,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td style="padding: 10px 0 0 0;">
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
                         <td style="padding: 0 10px 0 0;">
@@ -434,7 +513,7 @@
                               <td style="padding: 0 0 10px 0;font-size: 0; line-height: 0;">
                                 <img
                                   src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/beet.png"
-                                  alt="design" style="border: 0;" width="40" height="40">
+                                  alt="design" style="border: 0;" width="40" height="40" />
                               </td>
                             </tr>
                             <tr>
@@ -461,7 +540,7 @@
                               <td style="padding: 0 0 10px 0;font-size: 0; line-height: 0;">
                                 <img
                                   src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/hourse.png"
-                                  alt="design" style="border: 0;" width="40" height="40">
+                                  alt="design" style="border: 0;" width="40" height="40" />
                               </td>
                             </tr>
                             <tr>
@@ -504,7 +583,7 @@
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
                         <td class="btn" style="width: 90px; height: 28px;">
-                          <a href="#!" target="_blank">FEATURES</a>
+                          <a href="#!" target="_blank">&nbsp;&nbsp;FEATURES&nbsp;&nbsp;</a>
                         </td>
                       </tr>
                     </table>
@@ -529,7 +608,7 @@
             </td>
           </tr>
           <tr>
-            <td align="center" class="three-columns pb pr pl services-card">
+            <td align="center" class="pb pr pl services-card three-columns">
               <!--[if (gte mso 9)|(IE)]>
         <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
           <tr>
@@ -537,14 +616,14 @@
               <![endif]-->
               <table align="left" class="column" border="0" cellspacing="0" cellpadding="0"
                 role="presentation"
-                style="display: inline-block; vertical-align: top; width: 100%; max-width: 160px;  background-color: #f9f9f9;">
+                style="display: inline-block; max-width: 160px; background-color: #f9f9f9;">
                 <tr>
                   <td align="center" style="padding: 0 20px 0 20px;">
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
                         <td style="padding: 30px 0 10px 0; font-size: 0; line-height: 0;">
                           <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/flag.png"
-                            alt="design" width="50" height="50" style="border: none;">
+                            alt="design" width="50" height="50" style="border: none;" />
                         </td>
                       </tr>
                       <tr>
@@ -556,8 +635,8 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
-                          <p class="text" style="padding: 0 0 30px 0;">
+                        <td style="padding: 0 0 20px 0;">
+                          <p class="text">
                             Lorem Ipsum is simply dummy.
                           </p>
                         </td>
@@ -572,7 +651,7 @@
               <![endif]-->
               <table align="center" class="column" border="0" cellspacing="0" cellpadding="0"
                 role="presentation"
-                style="display: inline-block; vertical-align: top; width: 100%; max-width: 160px;  background-color: #f9f9f9;">
+                style="display: inline-block; max-width: 160px; background-color: #f9f9f9;">
                 <tr>
                   <td align="center" style="padding: 0 20px 0 20px;">
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
@@ -580,7 +659,7 @@
                         <td style="padding: 30px 0 10px 0; font-size: 0; line-height: 0;">
                           <img
                             src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/circle-graph.png"
-                            alt="design" width="50" height="50" style="border: none;">
+                            alt="design" width="50" height="50" style="border: none;" />
                         </td>
                       </tr>
                       <tr>
@@ -592,8 +671,8 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
-                          <p class="text" style="padding: 0 0 30px 0;">
+                        <td style="padding: 0 0 20px 0;">
+                          <p class="text">
                             Lorem Ipsum is simply dummy.
                           </p>
                         </td>
@@ -607,14 +686,14 @@
             <td>
               <![endif]-->
               <table align="right" class="column" border="0" cellspacing="0" cellpadding="0" role="presentation"
-                style="display: inline-block; vertical-align: top; width: 100%; max-width: 160px;  background-color: #f9f9f9;">
+                style="display: inline-block; max-width: 160px; background-color: #f9f9f9;">
                 <tr>
                   <td style="padding: 0 20px 0 20px;">
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
                         <td style="padding: 30px 0 10px 0; font-size: 0; line-height: 0;">
                           <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/graph.png"
-                            alt="design" width="50" height="50" style="border: none;">
+                            alt="design" width="50" height="50" style="border: none;" />
                         </td>
                       </tr>
                       <tr>
@@ -626,8 +705,8 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
-                          <p class="text" style="padding: 0 0 30px 0;">
+                        <td style="padding: 0 0 20px 0;">
+                          <p class="text">
                             Lorem Ipsum is simply dummy.
                           </p>
                         </td>
@@ -660,7 +739,7 @@
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
                         <td class="btn" style="width: 70px; height: 28px;">
-                          <a href="#!" target="_blank">ABOUT</a>
+                          <a href="#!" target="_blank">&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</a>
                         </td>
                       </tr>
                     </table>
@@ -671,8 +750,7 @@
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
                         <td style="padding: 0 0 5px 0;">
-                          <h3
-                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 24px; line-height: 34px; color: #191919;">
+                          <h3 class="section-subtitle">
                             Easy Solutions To Set Up Your Site
                           </h3>
                         </td>
@@ -688,7 +766,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td style="padding: 0 0 20px 0;">
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
                         <td class="btn" style="width: 148px; height: 44px;">
@@ -708,7 +786,7 @@
                 <tr>
                   <td style="padding: 0 0 0 10px; font-size: 0; line-height: 0;">
                     <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/about.png"
-                      alt="about" style="border: none;">
+                      alt="about" style="border: none;" />
                   </td>
                 </tr>
               </table>
@@ -718,84 +796,13 @@
         </table>
         <![endif]-->
             </td>
-            <!-- alternative table for adaptive -->
-            <td align="center" class="pt mobile-table mobile-padding" style="display: none;">
-              <!--[if (gte mso 9)|(IE)]>
-        <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-          <tr>
-            <td>
-              <![endif]-->
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column"
-                style="display: inline-block; vertical-align: center; width: 100%; max-width: 250px;">
-                <tr>
-                  <td style="padding: 0 10px 20px 0; font-size: 0; line-height: 0;">
-                    <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/about.png"
-                      alt="about" style="border: none;">
-                  </td>
-                </tr>
-              </table>
-              <!--[if (gte mso 9)|(IE)]>
-            </td>
-            <td>
-              <![endif]-->
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column"
-                style="display: inline-block; padding: 0 0 0 10px; vertical-align: top; width: 100%; max-width: 250px;">
-                <tr>
-                  <td style="padding: 0 0 10px 0;">
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
-                      <tr>
-                        <td class="btn" style="width: 70px; height: 28px;">
-                          <a href="#!" target="_blank">ABOUT</a>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column">
-                      <tr>
-                        <td style="padding: 0 0 5px 0;">
-                          <h3
-                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 24px; line-height: 34px; color: #191919;">
-                            Easy Solutions To Set Up Your Site
-                          </h3>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding: 0 0 30px 0;">
-                          <p class="text">
-                            Lorem Ipsum is simply dummy text of the printing.
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding: 0 0 30px 0;">
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
-                      <tr>
-                        <td class="btn" style="width: 148px; height: 44px;">
-                          LEARN MORE
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-              <!--[if (gte mso 9)|(IE)]>
-            </td>
-          </tr>
-        </table>
-        <![endif]-->
-            </td>
+
           </tr>
           <!-- about-end -->
 
           <!-- progress -->
           <tr>
-            <td align="center" class="pt two-column">
+            <td align="center" class="two-column" style="padding-top: 20px;">
               <!--[if (gte mso 9)|(IE)]>
         <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
           <tr>
@@ -804,14 +811,14 @@
               <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column"
                 style="display: inline-block; vertical-align: top; width: 100%; max-width: 250px;">
                 <tr>
-                  <td class="clients" style="padding: 0 10px 30px 0;">
+                  <td class="clients" style="padding: 10px 10px 30px 0;">
                     <table class="progress-item" align="center" border="0" cellspacing="0" cellpadding="0"
                       role="presentation"
                       style="width: 115px;">
                       <tr>
                         <td style="padding: 0 0 10px 0; font-size: 0; line-height: 0;">
                           <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/beet.png"
-                            alt="clients" style="border: 0;">
+                            alt="clients" style="border: 0;" width="40" height="40" />
                         </td>
                       </tr>
                       <tr>
@@ -832,13 +839,13 @@
                       </tr>
                     </table>
                   </td>
-                  <td class="projects" style="padding: 0 10px 30px 10px;">
+                  <td class="projects" style="padding: 10px 10px 30px 10px;">
                     <table class="progress-item" border="0" cellspacing="0" cellpadding="0" role="presentation"
                       style="width: 115px;">
                       <tr>
                         <td style="padding: 0 0 10px 0; font-size: 0; line-height: 0;">
                           <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/clubs.png"
-                            alt="Projects" style="border: 0;">
+                            alt="Projects" style="border: 0;" width="40" height="40" />
                         </td>
                       </tr>
                       <tr>
@@ -868,13 +875,13 @@
               <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column"
                 style="display: inline-block; vertical-align: top; width: 100%; max-width: 250px;">
                 <tr>
-                  <td class="awards" style="padding: 0 10px 30px 10px;">
+                  <td class="awards" style="padding: 10px 10px 30px 10px;">
                     <table class="progress-item" border="0" cellspacing="0" cellpadding="0" role="presentation"
                       style="width: 115px;">
                       <tr>
                         <td style="padding: 0 0 10px 0; font-size: 0; line-height: 0;">
                           <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/hearts.png"
-                            alt="Awards" style="border: 0;">
+                            alt="Awards" style="border: 0;" width="40" height="40" />
                         </td>
                       </tr>
                       <tr>
@@ -895,14 +902,14 @@
                       </tr>
                     </table>
                   </td>
-                  <td style="padding: 0 0 30px 10px;">
+                  <td style="padding: 10px 0 30px 10px;">
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation"
                       style="width: 115px;">
                       <tr>
                         <td style="padding: 0 0 10px 0; font-size: 0; line-height: 0;">
                           <img
                             src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/diamond.png"
-                            alt="Consultant" style="border: 0;">
+                            alt="Consultant" style="border: 0;" width="40" height="40" />
                         </td>
                       </tr>
                       <tr>
@@ -947,7 +954,7 @@
                 <tr>
                   <td style="padding: 0 10px 0 0; font-size: 0; line-height: 0;">
                     <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/service.png"
-                      alt="service" style="border: 0;">
+                      alt="service" style="border: 0;" />
                   </td>
                 </tr>
               </table>
@@ -962,7 +969,7 @@
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
                         <td class="btn" style="width: 78px; height: 28px;">
-                          <a href="#!" target="_blank">SERVICE</a>
+                          <a href="#!" target="_blank">&nbsp;&nbsp;SERVICE&nbsp;&nbsp;</a>
                         </td>
                       </tr>
                     </table>
@@ -973,8 +980,7 @@
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
                         <td>
-                          <h3
-                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 24px; line-height: 34px; color: #191919;">
+                          <h3 class="section-subtitle">
                             The Best&nbsp;Experience Offered by&nbsp;Agency
                           </h3>
                         </td>
@@ -995,7 +1001,7 @@
                       <tr>
                         <td style="padding: 0 10px 0 0; font-size: 0; line-height: 0;">
                           <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/amelia.png"
-                            alt="Amelia William" style="border: 0;">
+                            alt="Amelia William" style="border: 0;" />
                         </td>
                         <td>
                           <table border="0" cellspacing="0" cellpadding="0" role="presentation">
@@ -1039,7 +1045,7 @@
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
                         <td class="btn" style="width: 98px; height: 28px;">
-                          <a href="#!" target="_blank">PORTFOLIO</a>
+                          <a href="#!" target="_blank">&nbsp;&nbsp;PORTFOLIO&nbsp;&nbsp;</a>
                         </td>
                       </tr>
                     </table>
@@ -1064,14 +1070,913 @@
             </td>
           </tr>
           <tr>
+            <td align="center" class="pb mobile-padding">
+              <!--[if (gte mso 9)|(IE)]>
+                <table align=" center" border="0" cellspacing="0" cellpadding="0" role="presentation" width: 100%;>
+          <tr>
             <td>
-
+              <![endif]-->
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column"
+                style="display: inline-block; vertical-align: top; padding: 0 10px 0 0; width: 100%; max-width: 260px;">
+                <tr>
+                  <td style="padding: 0 0 20px 0;">
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                      <tr>
+                        <td style="padding: 0 0 10px 0; font-size: 0; line-height: 0;">
+                          <img
+                            src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/gallery-1.png"
+                            alt="Interface Design" style="width: 100%; max-width: 250px; height: auto; border: 0;" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p
+                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 16px; line-height: 26px; color:#191919;">
+                            Interface Design
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p
+                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #595959;">
+                            BRANDING
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                      <tr>
+                        <td style="padding: 0 0 10px 0;">
+                          <img
+                            src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/gallery-3.png"
+                            alt="Interface Design" style="width: 100%; max-width: 250px; height: auto; border: 0;" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p
+                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 16px; line-height: 26px; color:#191919;">
+                            Explore space
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p
+                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #595959;">
+                            PHOTO
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+            </td>
+            <td>
+              <![endif]-->
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column"
+                style="display: inline-block; vertical-align: top; padding: 0 0 0 10px; width: 100%; max-width: 260px;">
+                <tr>
+                  <td style="padding: 0 0 20px 0;">
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                      <tr>
+                        <td style="padding: 0 0 10px 0;">
+                          <img
+                            src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/gallery-2.png"
+                            alt="Interface Design" style="width: 100%; max-width: 250px; height: auto; border: 0;" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p
+                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 16px; line-height: 26px; color:#191919;">
+                            Inspiring Projects
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p
+                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #595959;">
+                            WEB
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                      <tr>
+                        <td style="padding: 0 0 10px 0;">
+                          <img
+                            src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/gallery-4.png"
+                            alt="Interface Design" style="width: 100%; max-width: 250px; height: auto; border: 0;" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p
+                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 16px; line-height: 26px; color:#191919;">
+                            Social Banner
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p
+                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #595959;">
+                            BRANDING
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+            </td>
+          </tr>
+        </table>
+        <![endif]-->
             </td>
           </tr>
           <!-- portfolio end  -->
 
+          <!-- connect -->
+          <tr>
+            <td class="pt pb connect-bg">
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                style="width: 100%; max-width: 600px;">
+                <tr>
+                  <td class="pl mobile-padding">
+                    <!--[if (gte mso 9)|(IE)]>
+                <table align=" center" border="0" cellspacing="0" cellpadding="0" role="presentation" width: 100%;>
+                <tr>
+                <td>
+              <![endif]-->
+                    <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation"
+                      class="column connect-left"
+                      style="display: inline-block; vertical-align: top; padding: 0 80px 0 0; width: 100%; max-width: 360px;">
+                      <tr>
+                        <td style="padding: 0 0 10px 0;">
+                          <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                            <tr>
+                              <td class="btn" style="width: 126px; height: 28px;">
+                                <a href="#!" target="_blank">&nbsp;&nbsp;LET'S&nbsp;CONNECT&nbsp;&nbsp;</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 0 0 10px 0;">
+                          <h3 class="section-subtitle">
+                            Helping Businesses
+                          </h3>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text">
+                            Lorem Ipsum is simply dummy text of
+                            the printing and typesetting simply.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  <td>
+              <![endif]-->
+                    <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation"
+                      class="column connect-right"
+                      style="display: inline-block; vertical-align: top; width: 100%; max-width: 140px;">
+                      <tr>
+                        <td style="padding: 40px 0 0 0;">
+                          <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                            <tr>
+                              <td class="btn" style="width: 140px; height: 44px;">
+                                <a href="" target="_blank">READ MORE</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+            </td>
+          </tr>
         </table>
-        <!-- main end -->
+        <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- connect end -->
+
+          <!-- team -->
+          <tr>
+            <td align="center" class="pt pb mobile-padding">
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                <tr>
+                  <td align="center" style="padding: 0 0 10px 0;">
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                      <tr>
+                        <td class="btn" style="width: 60px; height: 28px;">
+                          <a href="#!" target="_blank">&nbsp;&nbsp;TEAM&nbsp;&nbsp;</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 5px 0;">
+                    <h2 class="section-title">
+                      Meet the Team
+                    </h2>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="width: 300px;">
+                    <p class="text">
+                      Lorem Ipsum is simply dummy text of the
+                      printing and typesetting industry.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" class="pb mobile-padding">
+              <!--[if (gte mso 9)|(IE)]>
+                <table align=" center" border="0" cellspacing="0" cellpadding="0" role="presentation" width: 100%;>
+                <tr>
+                <td>
+              <![endif]-->
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column team-designer"
+                style="display: inline-block; vertical-align: center; padding: 0 10px 0 0; width: 100%; max-width: 260px;">
+                <tr>
+                  <td style="padding: 0 0 15px 0; font-size: 0; line-height: 0;">
+                    <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/robert.png"
+                      alt="Sandra Robert" width="250" style="border: 0;" />
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 5px 0;">
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                      style="width: 100%; max-width: 250px;">
+                      <tr>
+                        <td>
+                          <p
+                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 20px; line-height: 30px; color: #191919;">
+                            Sandra Robert
+                          </p>
+                        </td>
+                        <td style="width: 36px; height: 30px;">
+                          <a style="text-decoration: none;" href="#!" target="_blank">
+                            <img style="font-size: 0; line-height: 0;"
+                              src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/facebook-light.png"
+                              alt="facebook" width="30" height="30" />
+                          </a>
+                        </td>
+                        <td style="width: 30px; height: 30px;">
+                          <a style="text-decoration: none;"
+                            href="#!"
+                            target="_blank">
+                            <img style="font-size: 0; line-height: 0;"
+                              src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/link-light.png"
+                              alt="link" width="30" height="30" />
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p
+                      style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 16px; line-height: 26px; color: #595959">
+                      Designer
+                    </p>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  <td>
+              <![endif]-->
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column team-developer"
+                style="display: inline-block; vertical-align: center; padding: 0 0 0 10px; width: 100%; max-width: 260px;">
+                <tr>
+                  <td style="padding: 0 0 15px 0; font-size: 0; line-height: 0;">
+                    <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/paul.png"
+                      alt="Sandra Robert" width="250" style="border: 0;" />
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 5px 0;">
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                      style="width: 100%; max-width: 250px;">
+                      <tr>
+                        <td>
+                          <p
+                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 20px; line-height: 30px; color: #191919;">
+                            Jony Paul
+                          </p>
+                        </td>
+                        <td style="width: 36px; height: 30px;">
+                          <a style="text-decoration: none;" href="" target="_blank">
+                            <img style="font-size: 0; line-height: 0;"
+                              src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/facebook-light.png"
+                              alt="facebook" width="30" height="30" />
+                          </a>
+                        </td>
+                        <td style="width: 30px; height: 30px;">
+                          <a style="text-decoration: none;"
+                            href="#!"
+                            target="_blank">
+                            <img style="font-size: 0; line-height: 0;"
+                              src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/link-light.png"
+                              alt="link" width="30" height="30" />
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p
+                      style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 16px; line-height: 26px; color: #595959">
+                      Developer
+                    </p>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+            </td>
+          </tr>
+        </table>
+        <![endif]-->
+            </td>
+          </tr>
+          <!-- team end -->
+
+          <!-- testimonial -->
+          <tr>
+            <td align="center" class="pt pb mobile-padding">
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                <tr>
+                  <td align="center" style="padding: 0 0 10px 0;">
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                      <tr>
+                        <td class="btn" style="width: 112px; height: 28px;">
+                          <a href="#!" target="_blank">&nbsp;&nbsp;&nbsp;TESTIMONIAL&nbsp;&nbsp;&nbsp;</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 5px 0;">
+                    <h2 class="section-title">
+                      Our Testimonial
+                    </h2>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center">
+                    <p class="text" style="width: 300px;">
+                      Lorem Ipsum is simply dummy text of the
+                      printing and typesetting industry.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" class="pb pl pr two-columns mobile-padding">
+              <!--[if (gte mso 9)|(IE)]>
+                <table align=" center" border="0" cellspacing="0" cellpadding="0" role="presentation" width: 100%;>
+                <tr>
+                <td style="padding: 0 20px 0 20px;">
+              <![endif]-->
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                class="column testimonial-card"
+                style="border-radius: 16px; display: inline-block; vertical-align: top; padding: 20px 20px 0 20px; max-width: 250px; background-color: #f9f9f9;">
+                <tr>
+                  <td style="padding: 10px 0 20px 10px;">
+                    <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/sandra.png"
+                      alt="Sandra Robert" width="50" height="50" />
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 5px 10px;">
+                    <p
+                      style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 16px; line-height: 26px; color: #191919;">
+                      Best Company
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 10px 20px 10px;">
+                    <p class="text">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 0 10px;">
+                    <p
+                      style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 18px; line-height: 28px; color: #191919;">
+                      Sandra Robert
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 35px 10px;">
+                    <p
+                      style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; line-height: 24px; color: #595959;">
+                      YouTube
+                    </p>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  <td style="padding: 0 20px 0 20px;">
+              <![endif]-->
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                class="column"
+                style="border-radius: 16px; display: inline-block; vertical-align: top; padding: 20px 20px 0 20px; max-width: 250px; background-color: #f9f9f9;">
+                <tr>
+                  <td style="padding: 10px 0 20px 10px;">
+                    <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/oliver.png"
+                      alt="Oliver Charlotte" width="50" height="50" />
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 5px 10px;">
+                    <p
+                      style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 16px; line-height: 26px; color: #191919;">
+                      Very Good
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 10px 20px 10px;">
+                    <p class="text">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 0 10px;">
+                    <p
+                      style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 18px; line-height: 28px; color: #191919;">
+                      Oliver Charlotte
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 35px 10px;">
+                    <p
+                      style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; line-height: 24px; color: #595959;">
+                      Maool
+                    </p>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+            </td>
+          </tr>
+        </table>
+        <![endif]-->
+            </td>
+          </tr>
+          <!-- testimonial end -->
+
+          <!-- blog -->
+          <tr>
+            <td align="center" class="pt pb mobile-padding">
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                <tr>
+                  <td align="center" style="padding: 0 0 10px 0;">
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                      <tr>
+                        <td class="btn" style="width: 58px; height: 28px;">
+                          <a href="#!" target="_blank">
+                            &nbsp;&nbsp;BLOG&nbsp;&nbsp;
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 5px 0;">
+                    <h2 class="section-title">
+                      Latest Articles
+                    </h2>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center">
+                    <p class="text" style="width: 300px;">
+                      Lorem Ipsum is simply dummy text of the
+                      printing and typesetting industry.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" class="pb mobile-padding">
+              <!--[if (gte mso 9)|(IE)]>
+                <table align=" center" border="0" cellspacing="0" cellpadding="0" role="presentation" width: 100%;>
+                <tr>
+                <td>
+              <![endif]-->
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column article-img"
+                style="display: inline-block; vertical-align: top; padding: 0 10px 0 0; width: 100%; max-width: 210px;">
+                <tr>
+                  <td style="font-size: 0; line-height: 0;">
+                    <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/articles-1.png"
+                      alt="Provide Solution by Our Expert Team" />
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  <td>
+              <![endif]-->
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column"
+                style="display: inline-block; padding: 0 0 0 10px; width: 100%; max-width: 310px;">
+                <tr>
+                  <td style="padding: 10px 0 5px 0;">
+                    <p
+                      style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; line-height: 24px; color: #595959;">
+                      07 JUNE, 2022
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 20px 0;">
+                    <h4
+                      style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 20px; line-height: 30px; color: #191919;">
+                      Provide Solution by Our Expert Team
+                    </h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                      <tr>
+                        <td class="btn" style="width: 148px; height: 44px;">
+                          <a href="#!" target="_blank">
+                            LEARN MORE
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+            </td>
+          </tr>
+        </table>
+        <![endif]-->
+            </td>
+          </tr>
+          <tr>
+            <td align="center" class="pb mobile-padding">
+              <!--[if (gte mso 9)|(IE)]>
+                <table align=" center" border="0" cellspacing="0" cellpadding="0" role="presentation" width: 100%;>
+                <tr>
+                <td>
+              <![endif]-->
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column article-img"
+                style="display: inline-block; vertical-align: top; padding: 0 10px 0 0; width: 100%; max-width: 210px;">
+                <tr>
+                  <td style="font-size: 0; line-height: 0;">
+                    <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/articles-2.png"
+                      alt="Provide Solution by Our Expert Team" />
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  <td>
+              <![endif]-->
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column"
+                style="display: inline-block; padding: 0 0 0 10px; width: 100%; max-width: 310px;">
+                <tr>
+                  <td style="padding: 10px 0 5px 0;">
+                    <p
+                      style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; line-height: 24px; color: #595959;">
+                      07 JUNE, 2022
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 20px 0;">
+                    <h4
+                      style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 20px; line-height: 30px; color: #191919;">
+                      Provide Solution by Our Expert Team
+                    </h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                      <tr>
+                        <td class="btn" style="width: 148px; height: 44px;">
+                          <a href="#!" target="_blank">
+                            LEARN MORE
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+            </td>
+          </tr>
+        </table>
+        <![endif]-->
+            </td>
+          </tr>
+          <!-- blog-end -->
+
+          <!-- help -->
+          <tr>
+            <td align="center" class="pt">
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="help-bg"
+                style="width: 100%; max-width: 600px; background-color: #edeceb;">
+                <tr>
+                  <td style="padding: 50px 0 10px 40px;">
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                      <tr>
+                        <td class="btn" style="width: 114px; height: 28px;">
+                          <a href="#!" target="_blank">&nbsp;&nbsp;WE&nbsp;HELP&nbsp;YOU&nbsp;&nbsp;</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 10px 40px;">
+                    <h3 class="section-subtitle">
+                      Get in Touch With Us
+                    </h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 20px 40px;">
+                    <p class="text" style="width: 240px;">
+                      Lorem Ipsum is simply dummy
+                      text of the printing.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 50px 40px;">
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                      <tr>
+                        <td class="btn" style="width: 152px; height: 44px;">
+                          <a href="#!" target="_blank">GET STARTED</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- help-end -->
+
+          <!-- footer -->
+          <tr>
+            <td style="padding: 40px 0 0 0; background-color: #191919;" class="mobile-padding">
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                style="width: 100%; max-width: 600px;">
+                <tr>
+                  <td>
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                      style="width: 100%; max-width: 600px;">
+                      <tr>
+                        <td align="center">
+                          <!--[if (gte mso 9)|(IE)]>
+                    <table align=" center" border="0" cellspacing="0" cellpadding="0" role="presentation" width: 100%;>
+                    <tr>
+                    <td>
+                  <![endif]-->
+                          <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                            class="column footer-address"
+                            style="display: inline-block; vertical-align: top; padding: 0 20px 0 0; width: 100%; max-width: 200px;">
+                            <tr>
+                              <td style="padding: 0 0 20px 0; font-size: 0; line-height: 0;">
+                                <img
+                                  src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/footer-logo.png"
+                                  alt="logo" width="110" height="30" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 0 0 10px 0;">
+                                <p
+                                  style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #fff;">
+                                  65 E.Forest Hills,
+                                  <br />
+                                  New York 11209
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left">
+                                <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                                  <tr>
+                                    <td style="padding: 0 10px 0 0;">
+                                      <a style="text-decoration: none;" href="#!" target="_blank">
+                                        <img
+                                          src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/facebook.png"
+                                          alt="facebook" />
+                                      </a>
+                                    </td>
+                                    <td style="padding: 0 10px 0 0;">
+                                      <a style="text-decoration: none;" href="#!" target="_blank">
+                                        <img
+                                          src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/Instagram.png"
+                                          alt="insta" />
+                                      </a>
+                                    </td>
+                                    <td style="padding: 0 10px 0 0;">
+                                      <a style="text-decoration: none;" href="#!" target="_blank">
+                                        <img
+                                          src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/link.png"
+                                          alt="link" />
+                                      </a>
+                                    </td>
+                                    <td>
+                                      <a style="text-decoration: none;" href="#!" target="_blank">
+                                        <img
+                                          src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/twitter.png"
+                                          alt="twitter" />
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                          <!--[if (gte mso 9)|(IE)]>
+                      </td>
+                      <td>
+                  <![endif]-->
+                          <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                            class="column footer-contact"
+                            style="display: inline-block; vertical-align: top; padding: 0 20px 0 0; width: 100%; max-width: 190px;">
+                            <tr>
+                              <td style="padding: 0 0 20px 0; font-size: 0; line-height: 0;">
+                                <p
+                                  style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 16px; line-height: 26px; color: #fff;">
+                                  Contact Info
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p
+                                  style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #fff;">
+                                  Call us:
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a href="tel:++01234567891
+                              "
+                                  style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #fff; text-decoration: none;">
+                                  +01 (234) 567-891
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p
+                                  style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #fff;">
+                                  E-mail us:
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a href="mailto:support@maool.com"
+                                  style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #fff; text-decoration: none;">
+                                  support@maool.com</a>
+                              </td>
+                            </tr>
+                          </table>
+                          <!--[if (gte mso 9)|(IE)]>
+                      </td>
+                      </tr>
+                    </table>
+                    <![endif]-->
+                        </td>
+                        <td style="vertical-align: top;">
+                          <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                            <tr>
+                              <td style="padding: 0 0 20px 0; font-size: 0; line-height: 0;">
+                                <p
+                                  style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 16px; line-height: 26px; color: #fff;">
+                                  More Links
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a href="#!" target="_blank"
+                                  style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #fff; text-decoration: none;">
+                                  Help Center
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a href="#!" target="_blank"
+                                  style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #fff; text-decoration: none;">
+                                  My Account
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a href="#!" target="_blank"
+                                  style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #fff; text-decoration: none;">
+                                  Contact
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a href="#!" target="_blank"
+                                  style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #fff; text-decoration: none;">
+                                  Privacy
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pt pb pl pr mobile-padding">
+                    <div style="width: 100%; height: 3px; background-color: #e1e1e1"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pb pr pl mobile-padding">
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                      style="width: 100%; max-width: 600px;">
+                      <tr>
+                        <td align="left">
+                          <p class="footer-copy"
+                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #fff;">
+                            &#64;2021 Maool Inc. All Rights Reserved.
+                          </p>
+                        </td>
+                        <td align="right">
+                          <a href="" target="_blank" class="unsubscribe"
+                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #fff; text-decoration: none;">
+                            Unsubscribe
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- footer end -->
+
+        </table>
         <!--[if (gte mso 9)|(IE)]>
         </td>
         </tr>
