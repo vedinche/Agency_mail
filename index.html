@@ -36,14 +36,6 @@
         color: #e8fbfa;
       }
 
-      .pt {
-        padding-top: 30px;
-      }
-
-      .pb {
-        padding-bottom: 30px;
-      }
-
       .pr {
         padding-right: 40px;
       }
@@ -124,16 +116,11 @@
       }
 
       @media screen and (max-width: 599.98px) {
-        .mobile-padding {
-          padding-right: 10px !important;
-          padding-left: 10px !important;
-        }
-
         .column {
           display: block !important;
         }
 
-        .three-columns .column {
+        .three-columns .services-column {
           width: 100% !important;
           max-width: 100% !important;
         }
@@ -143,13 +130,30 @@
           max-width: 100% !important;
         }
 
-        .social-img {
-          max-width: 80% !important;
+        .two-columns .testimonial-column {
+          width: 100% !important;
+          max-width: 100% !important;
         }
 
-        .services-card {
+        .two-card-column {
+          max-width: 250px !important;
+        }
+
+        .clear-padding {
           padding-left: 0 !important;
           padding-right: 0 !important;
+        }
+
+        .desktop-table {
+          display: none !important;
+        }
+
+        .mobile-table {
+          display: block !important;
+        }
+
+        .social-img {
+          max-width: 80% !important;
         }
 
         .projects {
@@ -181,10 +185,6 @@
           padding-left: 0 !important;
         }
 
-        .testimonial-card {
-          margin-bottom: 20px !important;
-        }
-
         .article-img {
           max-width: 300px !important;
         }
@@ -208,20 +208,24 @@
         }
       }
 
+      @media screen and (max-width: 399.98px) {
+        .mobile-padding {
+          padding-right: 10px !important;
+          padding-left: 10px !important;
+        }
+      }
+
       @media (prefers-color-scheme: dark) {
         h1 {
           color: #000000 !important;
         }
       }
 
-      @media screen and (max-width: 399.98px) {}
-
       /* Условные комментарии для Outlook Custom Dark Mode Colors */
-      /* :root {
+      :root {
         color-scheme: light dark;
         supported-color-schemes: light dark;
       }
-      */
     </style>
 
     <!--[if (gte mso 9)|(IE)]>
@@ -317,43 +321,53 @@
           <tr>
             <td align="right" style="padding: 15px 40px 15px 40px; background-color: #f1f1f1;" class="mobile-padding">
               <a style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 12px; line-height: 22px; text-decoration: none; color: #939393;"
-                href="#!" target="blank">Get Flat 30% Off</a>
+                href="#!" target="blank" rel="noopener">Get Flat 30% Off</a>
             </td>
           </tr>
           <!-- header-top-end -->
 
           <!-- header-bottom -->
+          <!--spacer -->
           <tr>
-            <td align="center" class="pt pb mobile-padding">
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                style="width: 230px;" width="230">
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
                 <tr>
                   <td align="center" style="padding: 0 0 14px 0;">
-                    <a href="#!" target="_blank">
+                    <a href="#!" target="_blank" rel="noopener">
                       <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/logo.png"
-                        alt="logo" width="130" height="37" />
+                        alt="logo" width="120" />
                     </a>
                   </td>
                 </tr>
                 <tr>
                   <td align="center">
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;">
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                      style="width: 100%; max-width: 230px;">
                       <tr>
                         <td>
-                          <a style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; line-height: 24px; color: #191919;"
-                            href="#!" target="_blank">Home</a>
+                          <a href="#!" target="_blank" rel="noopener"
+                            style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; line-height: 24px; color: #191919;">
+                            Home</a>
                         </td>
                         <td>
-                          <a style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; line-height: 24px; color: #191919;"
-                            href="#!" target="_blank">About</a>
+                          <a href="#!" target="_blank" rel="noopener"
+                            style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; line-height: 24px; color: #191919;">
+                            About</a>
                         </td>
                         <td>
-                          <a style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; line-height: 24px; color: #191919;"
-                            href="#!" target="_blank">Blog</a>
+                          <a href="#!" target="_blank" rel="noopener"
+                            style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; line-height: 24px; color: #191919;">
+                            Blog</a>
                         </td>
                         <td>
-                          <a style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; line-height: 24px; color: #191919;"
-                            href="#!" target="_blank">Sale</a>
+                          <a href="#!" target="_blank" rel="noopener"
+                            style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; line-height: 24px; color: #191919;">
+                            Sale</a>
                         </td>
                       </tr>
                     </table>
@@ -362,13 +376,19 @@
               </table>
             </td>
           </tr>
+          <!--spacer -->
+          <tr>
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
+            </td>
+          </tr>
           <!-- header-bottom-end -->
 
           <!-- hero -->
           <tr>
-            <td class="pb">
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                style="width: 100%; max-width: 600px; background-color: #f5f8fa;">
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation"
+                style="background-color: #f5f8fa;">
                 <tr>
                   <td align="center" class="mobile-padding hero-bg"
                     width="600" height="428">
@@ -396,8 +416,8 @@
                         <td align="center">
                           <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                             <tr>
-                              <td align="center" class="btn" style="width: 148px; height: 44px;">
-                                <a href="#!" target="_blank">
+                              <td align="center" style="width: 148px; height: 44px;" class="btn">
+                                <a href="#!" target="_blank" rel="noopener">
                                   LEARN MORE
                                 </a>
                               </td>
@@ -411,179 +431,216 @@
               </table>
             </td>
           </tr>
+          <!--spacer -->
+          <tr>
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
+            </td>
+          </tr>
           <!-- hero end -->
 
           <!-- social -->
           <tr>
-            <td align="center" class="pb pr pl mobile-padding">
+            <td align="center" style="padding: 0 20px 0 20px;" class="mobile-padding">
               <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                style="width: 100%;">
+                style="width: 100%; max-width: 520px;">
                 <tr>
-                  <td align="left" style="font-size: 0; line-height: 0;">
-                    <a href="#!" target="blank" style="text-decoration: none;">
-                      <img class="social-img"
+                  <td align="left">
+                    <a href="#!" target="blank" rel="noopener">
+                      <img
                         src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/webflow-bg.png"
-                        alt="webflow" style="border: none; max-width: 100%;" />
+                        alt="webflow" style="max-width: 100%;" class="social-img" border="0" />
                     </a>
                   </td>
-                  <td align="center" style="font-size: 0; line-height: 0; text-decoration: none;">
-                    <a href="#!" target="blank" style="text-decoration: none;">
-                      <img class="social-img"
+                  <td align="center">
+                    <a href="#!" target="blank" rel="noopener">
+                      <img
                         src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/Facebook-bg.png"
-                        alt="facebook" style="border: none; max-width: 100%;" />
+                        alt="facebook" style="max-width: 100%;" class="social-img" border="0" />
                     </a>
                   </td>
                   <td align="right">
-                    <a href="#!"
-                      target="blank" style="font-size: 0; line-height: 0; text-decoration: none;">
-                      <img class="social-img"
-                        src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/YouTube-bg.png"
-                        alt="youtube" style="border: none; max-width: 100%;" />
+                    <a href="#!" target="blank" rel="noopener">
+                      <img
+                        src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/youtube-bg.png"
+                        alt="youtube" style="max-width: 100%;" class="social-img" border="0" />
                     </a>
                   </td>
                 </tr>
               </table>
+            </td>
+          </tr>
+          <!--spacer -->
+          <tr>
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
             </td>
           </tr>
           <!-- social end -->
 
           <!-- who we aree -->
+          <!--spacer -->
           <tr>
-            <td align="center" class="pb mobile-padding">
-              <!--[if (gte mso 9)|(IE)]>
-                <table align=" center" border="0" cellspacing="0" cellpadding="0" role="presentation" width: 100%;>
-          <tr>
-            <td>
-              <![endif]-->
-              <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" class="column"
-                style="display: inline-block; border-spacing: 0; width: 100%; max-width: 260px;">
-                <tr>
-                  <td class="card-img" style="font-size: 0; line-height: 0; padding: 0 10px 0 0;">
-                    <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/who-we-are.png"
-                      alt="who we are" style="width: 100%; max-width: 250px; border: 0;" width="250"
-                      height="350" />
-                  </td>
-                </tr>
-              </table>
-              <!--[if (gte mso 9)|(IE)]>
-            </td>
-            <td>
-              <![endif]-->
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column"
-                style="display: inline-block; padding: 20px 0 20px 10px; width: 100%; max-width: 260px;">
-                <tr>
-                  <td style="padding-bottom: 12px">
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
-                      <tr>
-                        <td class="btn" style="width: 112px; height: 28px;">
-                          <a href="#!" target="_blank">&nbsp;&nbsp;&nbsp;WHO&nbsp;WE&nbsp;ARE&nbsp;&nbsp;&nbsp;</a>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
-                      <tr>
-                        <td>
-                          <h3 class="section-subtitle">
-                            We're a Team of Talented Designer
-                          </h3>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding: 0 0 10px 0;">
-                          <p
-                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #595959;">
-                            Lorem Ipsum is&nbsp;simply dummy text of&nbsp;the printing.
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding: 10px 0 0 0;">
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
-                      <tr>
-                        <td style="padding: 0 10px 0 0;">
-                          <table border="0" cellspacing="0" cellpadding="0" role="presentation">
-                            <tr>
-                              <td style="padding: 0 0 10px 0;font-size: 0; line-height: 0;">
-                                <img
-                                  src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/beet.png"
-                                  alt="design" style="border: 0;" width="40" height="40" />
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p
-                                  style="margin: 0; font-family: 'Poppins', sans-serif;font-weight: 700; font-size: 16px; line-height: 26px; color: #191919;">
-                                  Design
-                                </p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p
-                                  style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #595959;">
-                                  Lorem Ipsum is dummy.
-                                </p>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                        <td>
-                          <table border="0" cellspacing="0" cellpadding="0" role="presentation">
-                            <tr>
-                              <td style="padding: 0 0 10px 0;font-size: 0; line-height: 0;">
-                                <img
-                                  src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/hourse.png"
-                                  alt="design" style="border: 0;" width="40" height="40" />
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p
-                                  style="margin: 0; font-family: 'Poppins', sans-serif;font-weight: 700; font-size: 16px; line-height: 26px; color: #191919;">
-                                  Design
-                                </p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p class="text">
-                                  Lorem Ipsum is dummy.
-                                </p>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-              <!--[if (gte mso 9)|(IE)]>
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
             </td>
           </tr>
-        </table>
-        <![endif]-->
+          <tr>
+            <td align="center" style="padding: 0 10px 0 20px" class="mobile-padding">
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+              <tr>
+              <td>
+              <![endif]-->
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                style="vertical-align: middle; display: inline-block; width: 100%; max-width: 280px;"
+                class="column two-card-column">
+                <tr>
+                  <td style="padding: 0 10px 0 20px" class="clear-padding">
+                    <img
+                      src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/who-we-are.png"
+                      border="0" width="250" alt="WHO WE ARE" />
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              <td>
+              <![endif]-->
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                style="vertical-align: middle; display: inline-block; width: 100%; max-width: 280px"
+                class="column two-card-column">
+                <tr>
+                  <td style="padding: 0 20px 0 10px" class="clear-padding">
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                      <tr>
+                        <td style="padding: 16px 0 10px 0;">
+                          <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                            <tr>
+                              <td style="width: 112px; height: 28px;" class="btn">
+                                <a href="#!" target="_blank" rel="nooper">
+                                  &nbsp;&nbsp;&nbsp;WHO&nbsp;WE&nbsp;ARE&nbsp;&nbsp;&nbsp;</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                            <tr>
+                              <td style="padding: 0 0 5px 0;">
+                                <h3 class="section-subtitle">
+                                  We're a Team of Talented Designer
+                                </h3>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 0 0 20px 0;">
+                                <p
+                                  style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #595959;">
+                                  Lorem Ipsum is&nbsp;simply dummy text of&nbsp;the printing.
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                            <tr>
+                              <td style="padding: 0 6px 0 0;">
+                                <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                                  <tr>
+                                    <td style="padding: 0 0 10px 0;">
+                                      <img
+                                        src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/beet.png"
+                                        alt="design" border="0" width="40" />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="margin: 0; font-family: 'Poppins', sans-serif;font-weight: 700; font-size: 16px; line-height: 26px; color: #191919;">
+                                        Design
+                                      </p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #595959;">
+                                        Lorem Ipsum is&nbsp;dummy.
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td style="padding: 0 0 0 6px;">
+                                <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                                  <tr>
+                                    <td style="padding: 0 0 10px 0;">
+                                      <img
+                                        src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/hourse.png"
+                                        alt="design" border="0" width="40" />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="margin: 0; font-family: 'Poppins', sans-serif;font-weight: 700; font-size: 16px; line-height: 26px; color: #191919;">
+                                        Technology
+                                      </p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p class="text">
+                                        Lorem Ipsum is dummy.
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
             </td>
           </tr>
           <!-- who we are end -->
 
           <!-- services -->
+          <!--spacer -->
+          <tr>
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
+            </td>
+          </tr>
           <tr>
             <td align="center" class="pt pb mobile-padding">
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
                 <tr>
                   <td style="padding: 0 0 10px 0;" align="center">
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
-                        <td class="btn" style="width: 90px; height: 28px;">
-                          <a href="#!" target="_blank">&nbsp;&nbsp;FEATURES&nbsp;&nbsp;</a>
+                        <td style="width: 90px; height: 28px;" class="btn">
+                          <a href="#!" target="_blank" rel="noopener">&nbsp;&nbsp;FEATURES&nbsp;&nbsp;</a>
                         </td>
                       </tr>
                     </table>
@@ -598,7 +655,7 @@
                 </tr>
                 <tr>
                   <td align="center">
-                    <p class="text" style="width: 300px;">
+                    <p style="width: 300px;" class="text">
                       Lorem Ipsum is&nbsp;simply dummy text of&nbsp;the
                       printing and typesetting industry.
                     </p>
@@ -608,22 +665,28 @@
             </td>
           </tr>
           <tr>
-            <td align="center" class="pb pr pl services-card three-columns">
-              <!--[if (gte mso 9)|(IE)]>
-        <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
+            </td>
+          </tr>
           <tr>
+            <td class="pr pl three-columns clear-padding">
+              <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+            <tr>
             <td>
-              <![endif]-->
-              <table align="left" class="column" border="0" cellspacing="0" cellpadding="0"
+            <![endif]-->
+              <table border="0" cellspacing="0" cellpadding="0"
                 role="presentation"
-                style="display: inline-block; max-width: 160px; background-color: #f9f9f9;">
+                style="display: inline-block; width: 100%; max-width: 170px; background-color: #f9f9f9;"
+                class="services-column">
                 <tr>
                   <td align="center" style="padding: 0 20px 0 20px;">
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
-                        <td style="padding: 30px 0 10px 0; font-size: 0; line-height: 0;">
+                        <td style="padding: 30px 0 10px 0;">
                           <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/flag.png"
-                            alt="design" width="50" height="50" style="border: none;" />
+                            alt="design" width="50" border="0" />
                         </td>
                       </tr>
                       <tr>
@@ -646,20 +709,21 @@
                 </tr>
               </table>
               <!--[if (gte mso 9)|(IE)]>
-            </td>
-            <td>
+              </td>
+              <td>
               <![endif]-->
-              <table align="center" class="column" border="0" cellspacing="0" cellpadding="0"
+              <table border="0" cellspacing="0" cellpadding="0"
                 role="presentation"
-                style="display: inline-block; max-width: 160px; background-color: #f9f9f9;">
+                style="display: inline-block; width: 100%; max-width: 170px; background-color: #f9f9f9;"
+                class="services-column">
                 <tr>
-                  <td align="center" style="padding: 0 20px 0 20px;">
+                  <td style="padding: 0 20px 0 20px;">
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
-                        <td style="padding: 30px 0 10px 0; font-size: 0; line-height: 0;">
+                        <td style="padding: 30px 0 10px 0;">
                           <img
                             src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/circle-graph.png"
-                            alt="design" width="50" height="50" style="border: none;" />
+                            alt="design" width="50" border="0" />
                         </td>
                       </tr>
                       <tr>
@@ -682,11 +746,12 @@
                 </tr>
               </table>
               <!--[if (gte mso 9)|(IE)]>
-            </td>
-            <td>
+              </td>
+              <td>
               <![endif]-->
-              <table align="right" class="column" border="0" cellspacing="0" cellpadding="0" role="presentation"
-                style="display: inline-block; max-width: 160px; background-color: #f9f9f9;">
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                style="display: inline-block; width: 100%; max-width: 170px; background-color: #f9f9f9;"
+                class="services-column">
                 <tr>
                   <td style="padding: 0 20px 0 20px;">
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
@@ -716,109 +781,235 @@
                 </tr>
               </table>
               <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
             </td>
           </tr>
-        </table>
-        <![endif]-->
+          <!--spacer -->
+          <tr>
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
             </td>
           </tr>
           <!-- services end -->
 
           <!-- about -->
+          <!--spacer -->
           <tr>
-            <td align="center" class="pt pb mobile-padding desctop-table">
-              <!--[if (gte mso 9)|(IE)]>
-        <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-          <tr>
-            <td>
-              <![endif]-->
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column"
-                style="display: inline-block; padding: 0 10px 0 0; vertical-align: top; width: 100%; max-width: 260px;">
-                <tr>
-                  <td style="padding: 0 0 10px 0;">
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
-                      <tr>
-                        <td class="btn" style="width: 70px; height: 28px;">
-                          <a href="#!" target="_blank">&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</a>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
-                      <tr>
-                        <td style="padding: 0 0 5px 0;">
-                          <h3 class="section-subtitle">
-                            Easy Solutions To Set Up Your Site
-                          </h3>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding: 0 0 30px 0;">
-                          <p class="text">
-                            Lorem Ipsum is simply dummy text of the printing.
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding: 0 0 20px 0;">
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
-                      <tr>
-                        <td class="btn" style="width: 148px; height: 44px;">
-                          LEARN MORE
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-              <!--[if (gte mso 9)|(IE)]>
-            </td>
-            <td>
-              <![endif]-->
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column"
-                style="display: inline-block; vertical-align: center; width: 100%; max-width: 250px;">
-                <tr>
-                  <td style="padding: 0 0 0 10px; font-size: 0; line-height: 0;">
-                    <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/about.png"
-                      alt="about" style="border: none;" />
-                  </td>
-                </tr>
-              </table>
-              <!--[if (gte mso 9)|(IE)]>
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
             </td>
           </tr>
-        </table>
-        <![endif]-->
-            </td>
+          <tr>
 
+            <!-- desctop view -->
+            <td align="center" style="padding: 0 10px 0 20px;" class="mobile-padding desktop-table">
+              <!--[if (gte mso 9)|(IE)]>
+              <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+              <tr>
+              <td>
+              <![endif]-->
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                style="vertical-align: middle; display: inline-block; width: 100%; max-width: 280px;"
+                class="column two-card-column">
+                <tr>
+                  <td style="padding: 0 10px 0 20px" class="clear-padding">
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                      <tr>
+                        <td style="padding: 0 0 10px 0;">
+                          <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                            <tr>
+                              <td style="width: 70px; height: 28px;" class="btn">
+                                <a href="#!" target="_blank" rel="noopener">&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                            <tr>
+                              <td style="padding: 0 0 5px 0;">
+                                <h3 class="section-subtitle">
+                                  Easy Solutions To&nbsp;Set Up&nbsp;Your Site
+                                </h3>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 0 0 30px 0;">
+                                <p class="text">
+                                  Lorem Ipsum is simply dummy text of the printing.
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 0 0 16px 0;">
+                          <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                            <tr>
+                              <td style="width: 148px; height: 44px;" class="btn">
+                                <a href="#!" target="_blank" rel="noopener">LEARN MORE</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              <td>
+              <![endif]-->
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                style="vertical-align: middle; display: inline-block; width: 100%; max-width: 280px;"
+                class="column two-card-column">
+                <tr>
+                  <td style="padding: 0 20px 0 10px;" class="clear-padding">
+                    <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/about.png"
+                      alt="about" border="0" width="250" />
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+            </td>
+            <!-- end desctop view -->
+
+            <!-- mobile view -->
+            <td align="center"
+              style="display: none;"
+              class="mobile-padding mobile-table">
+              <!--[if (gte mso 9)|(IE)]>
+              <v:shape id="outlook_block" style="display:none;" o:insetmode="auto">
+              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+              <tr>
+              <td>
+              <![endif]-->
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                style="vertical-align: middle; display: inline-block; width: 100%; max-width: 280px;"
+                class="column two-card-column">
+                <tr>
+                  <td style="padding: 0 10px 0 20px;" class="clear-padding">
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                      <tr>
+                        <td>
+                          <img
+                            src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/about.png"
+                            border="0" width="250" alt="about" />
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              <td>
+              <![endif]-->
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                style="vertical-align: middle; display: inline-block; width: 100%; max-width: 280px;"
+                class="column two-card-column">
+                <tr>
+                  <td style="padding: 0 20px 0 10px;" class="clear-padding">
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                      <tr>
+                        <td style="padding: 16px 0 10px 0;">
+                          <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                            <tr>
+                              <td style="width: 70px; height: 28px;" class="btn">
+                                <a href="#!" target="_blank" rel="noopener">&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                            <tr>
+                              <td style="padding: 0 0 5px 0;">
+                                <h3 class="section-subtitle">
+                                  Easy Solutions To&nbsp;Set Up&nbsp;Your Site
+                                </h3>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 0 0 30px 0;">
+                                <p class="text">
+                                  Lorem Ipsum is simply dummy text of the printing.
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                            <tr>
+                              <td style="width: 148px; height: 44px;" class="btn">
+                                <a href="#!" target="_blank" rel="noopener">LEARN MORE</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              </v:shape>
+              <![endif]-->
+            </td>
+            <!-- end mobile view -->
+            <!--spacer -->
+          </tr>
+          <tr>
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
+            </td>
           </tr>
           <!-- about-end -->
 
           <!-- progress -->
+          <!--spacer -->
           <tr>
-            <td align="center" class="two-column" style="padding-top: 20px;">
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" class="two-column">
               <!--[if (gte mso 9)|(IE)]>
-        <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-          <tr>
-            <td>
+              <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+              <tr>
+              <td>
               <![endif]-->
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column"
-                style="display: inline-block; vertical-align: top; width: 100%; max-width: 250px;">
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                style="display: inline-block; vertical-align: top; width: 100%; max-width: 250px;" class="column">
                 <tr>
-                  <td class="clients" style="padding: 10px 10px 30px 0;">
+                  <td class="clients" style="padding: 0 10px 30px 0;">
                     <table class="progress-item" align="center" border="0" cellspacing="0" cellpadding="0"
                       role="presentation"
                       style="width: 115px;">
                       <tr>
-                        <td style="padding: 0 0 10px 0; font-size: 0; line-height: 0;">
+                        <td style="padding: 0 0 10px 0;">
                           <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/beet.png"
-                            alt="clients" style="border: 0;" width="40" height="40" />
+                            alt="clients" border="0" width="40" />
                         </td>
                       </tr>
                       <tr>
@@ -839,13 +1030,13 @@
                       </tr>
                     </table>
                   </td>
-                  <td class="projects" style="padding: 10px 10px 30px 10px;">
-                    <table class="progress-item" border="0" cellspacing="0" cellpadding="0" role="presentation"
-                      style="width: 115px;">
+                  <td class="projects" style="padding: 0 10px 30px 10px;">
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                      style="width: 115px;" class="progress-item">
                       <tr>
-                        <td style="padding: 0 0 10px 0; font-size: 0; line-height: 0;">
+                        <td style="padding: 0 0 10px 0;">
                           <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/clubs.png"
-                            alt="Projects" style="border: 0;" width="40" height="40" />
+                            alt="Projects" border="0" width="40" />
                         </td>
                       </tr>
                       <tr>
@@ -869,19 +1060,19 @@
                 </tr>
               </table>
               <!--[if (gte mso 9)|(IE)]>
-            </td>
-            <td>
+              </td>
+              <td>
               <![endif]-->
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column"
-                style="display: inline-block; vertical-align: top; width: 100%; max-width: 250px;">
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                style="display: inline-block; vertical-align: top; width: 100%; max-width: 250px;" class="column">
                 <tr>
-                  <td class="awards" style="padding: 10px 10px 30px 10px;">
+                  <td class="awards" style="padding: 0 10px 30px 10px;">
                     <table class="progress-item" border="0" cellspacing="0" cellpadding="0" role="presentation"
                       style="width: 115px;">
                       <tr>
-                        <td style="padding: 0 0 10px 0; font-size: 0; line-height: 0;">
+                        <td style="padding: 0 0 10px 0;">
                           <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/hearts.png"
-                            alt="Awards" style="border: 0;" width="40" height="40" />
+                            alt="Awards" border="0" width="40" />
                         </td>
                       </tr>
                       <tr>
@@ -902,14 +1093,14 @@
                       </tr>
                     </table>
                   </td>
-                  <td style="padding: 10px 0 30px 10px;">
+                  <td style="padding: 0 0 30px 10px;">
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation"
                       style="width: 115px;">
                       <tr>
-                        <td style="padding: 0 0 10px 0; font-size: 0; line-height: 0;">
+                        <td style="padding: 0 0 10px 0;">
                           <img
                             src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/diamond.png"
-                            alt="Consultant" style="border: 0;" width="40" height="40" />
+                            alt="Consultant" border="0" width="40" />
                         </td>
                       </tr>
                       <tr>
@@ -933,91 +1124,114 @@
                 </tr>
               </table>
               <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
             </td>
           </tr>
-        </table>
-        <![endif]-->
+          <!--spacer -->
+          <tr>
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
             </td>
           </tr>
           <!-- progress-end -->
 
           <!-- experience -->
           <tr>
-            <td align="center" class="pt pb mobile-padding">
-              <!--[if (gte mso 9)|(IE)]>
-        <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
+            </td>
+          </tr>
           <tr>
-            <td>
+            <td align="center" style="padding: 0 10px 0 20px" class="mobile-padding">
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+              <tr>
+              <td>
               <![endif]-->
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column"
-                style=" display: inline-block; vertical-align: middle; width: 100%; max-width: 260px;">
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                style="vertical-align: middle; display: inline-block; width: 100%; max-width: 280px;"
+                class="column two-card-column">
                 <tr>
-                  <td style="padding: 0 10px 0 0; font-size: 0; line-height: 0;">
-                    <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/service.png"
-                      alt="service" style="border: 0;" />
+                  <td style="padding: 0 10px 0 20px" class="clear-padding">
+                    <img
+                      src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/service.png"
+                      border="0" width="250" alt="Best Experience" />
                   </td>
                 </tr>
               </table>
               <!--[if (gte mso 9)|(IE)]>
-            </td>
-            <td>
+              </td>
+              <td>
               <![endif]-->
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column"
-                style=" display: inline-block; vertical-align: top; padding: 0 0 0 10px; width: 100%; max-width: 260px;">
+              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                style="vertical-align: middle; display: inline-block; width: 100%; max-width: 280px"
+                class="column two-card-column">
                 <tr>
-                  <td style="padding: 20px 0 12px 0;">
+                  <td style="padding: 0 20px 0 10px" class="clear-padding">
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
-                        <td class="btn" style="width: 78px; height: 28px;">
-                          <a href="#!" target="_blank">&nbsp;&nbsp;SERVICE&nbsp;&nbsp;</a>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
-                      <tr>
-                        <td>
-                          <h3 class="section-subtitle">
-                            The Best&nbsp;Experience Offered by&nbsp;Agency
-                          </h3>
+                        <td style="padding: 16px 0 10px 0;">
+                          <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                            <tr>
+                              <td style="width: 112px; height: 28px;" class="btn">
+                                <a href="#!" target="_blank" rel="nooper">
+                                  &nbsp;&nbsp;SERVICE&nbsp;&nbsp;</a>
+                              </td>
+                            </tr>
+                          </table>
                         </td>
                       </tr>
                       <tr>
-                        <td style="padding: 0 0 20px 0;">
-                          <p class="text">
-                            Lorem Ipsum is&nbsp;simply dummy text of&nbsp;the printing and typesetting.
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation">
-                      <tr>
-                        <td style="padding: 0 10px 0 0; font-size: 0; line-height: 0;">
-                          <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/amelia.png"
-                            alt="Amelia William" style="border: 0;" />
-                        </td>
                         <td>
                           <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                             <tr>
-                              <td>
-                                <p
-                                  style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 16px; line-height: 26px; color: #191919;">
-                                  Amelia William
-                                </p>
+                              <td style="padding: 0 0 5px 0;">
+                                <h3 class="section-subtitle">
+                                  The Best&nbsp;Experience Offered by&nbsp;Agency
+                                </h3>
                               </td>
                             </tr>
                             <tr>
-                              <td>
-                                <p class="text">
-                                  Lorem Ipsum is simply.
+                              <td style="padding: 0 0 20px 0;">
+                                <p
+                                  style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #595959;">
+                                  Lorem Ipsum is&nbsp;simply dummy text of&nbsp;the printing and typesetting.
                                 </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                            <tr>
+                              <td style="padding: 0 10px 0 0;">
+                                <img
+                                  src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/amelia.png"
+                                  alt="Amelia William" border="0" />
+                              </td>
+                              <td>
+                                <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 16px; line-height: 26px; color: #191919;">
+                                        Amelia William
+                                      </p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p class="text">
+                                        Lorem Ipsum is simply.
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
                               </td>
                             </tr>
                           </table>
@@ -1028,24 +1242,34 @@
                 </tr>
               </table>
               <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
             </td>
           </tr>
-        </table>
-        <![endif]-->
+          <tr>
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
             </td>
           </tr>
           <!-- experience-end -->
 
           <!-- portfolio -->
           <tr>
-            <td align="center" class="pt mobile-padding">
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" class="mobile-padding">
               <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                 <tr>
                   <td align="center" style="padding: 0 0 10px 0;">
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
-                        <td class="btn" style="width: 98px; height: 28px;">
-                          <a href="#!" target="_blank">&nbsp;&nbsp;PORTFOLIO&nbsp;&nbsp;</a>
+                        <td style="width: 98px; height: 28px;" class="btn">
+                          <a href="#!" target="_blank" rel="noopener">&nbsp;&nbsp;PORTFOLIO&nbsp;&nbsp;</a>
                         </td>
                       </tr>
                     </table>
@@ -1059,7 +1283,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td align="center" class="pb" style="width: 300px;">
+                  <td align="center" style="width: 300px;">
                     <p class="text">
                       Lorem Ipsum is simply dummy text of the
                       printing and typesetting industry.
@@ -1070,12 +1294,17 @@
             </td>
           </tr>
           <tr>
-            <td align="center" class="pb mobile-padding">
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" class="mobile-padding">
               <!--[if (gte mso 9)|(IE)]>
                 <table align=" center" border="0" cellspacing="0" cellpadding="0" role="presentation" width: 100%;>
-          <tr>
-            <td>
-              <![endif]-->
+                <tr>
+                <td>
+                <![endif]-->
               <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column"
                 style="display: inline-block; vertical-align: top; padding: 0 10px 0 0; width: 100%; max-width: 260px;">
                 <tr>
@@ -1085,7 +1314,7 @@
                         <td style="padding: 0 0 10px 0; font-size: 0; line-height: 0;">
                           <img
                             src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/gallery-1.png"
-                            alt="Interface Design" style="width: 100%; max-width: 250px; height: auto; border: 0;" />
+                            alt="Interface Design" border="0" style="width: 100%; max-width: 250px; height: auto;" />
                         </td>
                       </tr>
                       <tr>
@@ -1108,13 +1337,13 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td style="padding: 0 0 20px 0;">
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
                         <td style="padding: 0 0 10px 0;">
                           <img
                             src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/gallery-3.png"
-                            alt="Interface Design" style="width: 100%; max-width: 250px; height: auto; border: 0;" />
+                            alt="Interface Design" border="0" style="width: 100%; max-width: 250px; height: auto;" />
                         </td>
                       </tr>
                       <tr>
@@ -1138,8 +1367,8 @@
                 </tr>
               </table>
               <!--[if (gte mso 9)|(IE)]>
-            </td>
-            <td>
+              </td>
+              <td>
               <![endif]-->
               <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column"
                 style="display: inline-block; vertical-align: top; padding: 0 0 0 10px; width: 100%; max-width: 260px;">
@@ -1150,7 +1379,7 @@
                         <td style="padding: 0 0 10px 0;">
                           <img
                             src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/gallery-2.png"
-                            alt="Interface Design" style="width: 100%; max-width: 250px; height: auto; border: 0;" />
+                            alt="Interface Design" border="0" style="width: 100%; max-width: 250px; height: auto;" />
                         </td>
                       </tr>
                       <tr>
@@ -1179,7 +1408,7 @@
                         <td style="padding: 0 0 10px 0;">
                           <img
                             src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/gallery-4.png"
-                            alt="Interface Design" style="width: 100%; max-width: 250px; height: auto; border: 0;" />
+                            alt="Interface Design" border="0" style="width: 100%; max-width: 250px; height: auto;" />
                         </td>
                       </tr>
                       <tr>
@@ -1203,35 +1432,42 @@
                 </tr>
               </table>
               <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
             </td>
           </tr>
-        </table>
-        <![endif]-->
+          <!--spacer -->
+          <tr>
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
             </td>
           </tr>
           <!-- portfolio end  -->
 
           <!-- connect -->
           <tr>
-            <td class="pt pb connect-bg">
+            <td style="padding: 20px 0 20px 0;" class="connect-bg">
               <table border="0" cellspacing="0" cellpadding="0" role="presentation"
                 style="width: 100%; max-width: 600px;">
                 <tr>
                   <td class="pl mobile-padding">
                     <!--[if (gte mso 9)|(IE)]>
-                <table align=" center" border="0" cellspacing="0" cellpadding="0" role="presentation" width: 100%;>
-                <tr>
-                <td>
-              <![endif]-->
+                  <table align=" center" border="0" cellspacing="0" cellpadding="0" role="presentation" width: 100%;>
+                  <tr>
+                  <td>
+                  <![endif]-->
                     <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation"
-                      class="column connect-left"
-                      style="display: inline-block; vertical-align: top; padding: 0 80px 0 0; width: 100%; max-width: 360px;">
+                      style="display: inline-block; vertical-align: top; padding: 0 80px 0 0; width: 100%; max-width: 360px;"
+                      class="column connect-left">
                       <tr>
                         <td style="padding: 0 0 10px 0;">
                           <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                             <tr>
-                              <td class="btn" style="width: 126px; height: 28px;">
-                                <a href="#!" target="_blank">&nbsp;&nbsp;LET'S&nbsp;CONNECT&nbsp;&nbsp;</a>
+                              <td style="width: 126px; height: 28px;" class="btn">
+                                <a href="#!" target="_blank" rel="noopener">&nbsp;&nbsp;LET'S&nbsp;CONNECT&nbsp;&nbsp;
+                                </a>
                               </td>
                             </tr>
                           </table>
@@ -1254,9 +1490,9 @@
                       </tr>
                     </table>
                     <!--[if (gte mso 9)|(IE)]>
-                  </td>
-                  <td>
-              <![endif]-->
+                    </td>
+                    <td>
+                    <![endif]-->
                     <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation"
                       class="column connect-right"
                       style="display: inline-block; vertical-align: top; width: 100%; max-width: 140px;">
@@ -1264,8 +1500,8 @@
                         <td style="padding: 40px 0 0 0;">
                           <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                             <tr>
-                              <td class="btn" style="width: 140px; height: 44px;">
-                                <a href="" target="_blank">READ MORE</a>
+                              <td style="width: 140px; height: 44px;" class="btn">
+                                <a href="#!" target="_blank" rel="noopener">READ MORE</a>
                               </td>
                             </tr>
                           </table>
@@ -1273,27 +1509,39 @@
                       </tr>
                     </table>
                     <!--[if (gte mso 9)|(IE)]>
-            </td>
-          </tr>
-        </table>
-        <![endif]-->
+                    </td>
+                    </tr>
+                    </table>
+                    <![endif]-->
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
+          <!--spacer -->
+          <tr>
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
+            </td>
+          </tr>
           <!-- connect end -->
 
           <!-- team -->
+          <!--spacer -->
           <tr>
-            <td align="center" class="pt pb mobile-padding">
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" class="mobile-padding">
               <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                 <tr>
                   <td align="center" style="padding: 0 0 10px 0;">
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
-                        <td class="btn" style="width: 60px; height: 28px;">
-                          <a href="#!" target="_blank">&nbsp;&nbsp;TEAM&nbsp;&nbsp;</a>
+                        <td style="width: 60px; height: 28px;" class="btn">
+                          <a href="#!" target="_blank" rel="noopener">&nbsp;&nbsp;TEAM&nbsp;&nbsp;</a>
                         </td>
                       </tr>
                     </table>
@@ -1317,8 +1565,14 @@
               </table>
             </td>
           </tr>
+          <!--spacer -->
           <tr>
-            <td align="center" class="pb mobile-padding">
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" class="mobile-padding">
               <!--[if (gte mso 9)|(IE)]>
                 <table align=" center" border="0" cellspacing="0" cellpadding="0" role="presentation" width: 100%;>
                 <tr>
@@ -1431,18 +1685,31 @@
         <![endif]-->
             </td>
           </tr>
+          <!--spacer -->
+          <tr>
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
+            </td>
+          </tr>
           <!-- team end -->
 
           <!-- testimonial -->
+          <!--spacer -->
           <tr>
-            <td align="center" class="pt pb mobile-padding">
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" class="mobile-padding">
               <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                 <tr>
                   <td align="center" style="padding: 0 0 10px 0;">
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
-                        <td class="btn" style="width: 112px; height: 28px;">
-                          <a href="#!" target="_blank">&nbsp;&nbsp;&nbsp;TESTIMONIAL&nbsp;&nbsp;&nbsp;</a>
+                        <td style="width: 112px; height: 28px;" class="btn">
+                          <a href="#!" target="_blank" rel="noopener">&nbsp;&nbsp;&nbsp;TESTIMONIAL&nbsp;&nbsp;&nbsp;
+                          </a>
                         </td>
                       </tr>
                     </table>
@@ -1466,109 +1733,139 @@
               </table>
             </td>
           </tr>
+          <!--spacer -->
           <tr>
-            <td align="center" class="pb pl pr two-columns mobile-padding">
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" class="two-columns mobile-padding" style="padding: 0 30px 0 30px;">
               <!--[if (gte mso 9)|(IE)]>
-                <table align=" center" border="0" cellspacing="0" cellpadding="0" role="presentation" width: 100%;>
-                <tr>
-                <td style="padding: 0 20px 0 20px;">
+              <table align=" center" border="0" cellspacing="0" cellpadding="0" role="presentation" width: 100%;>
+              <tr>
+              <td>
               <![endif]-->
               <table align="left" border="0" cellspacing="0" cellpadding="0" role="presentation"
-                class="column testimonial-card"
-                style="border-radius: 16px; display: inline-block; vertical-align: top; padding: 20px 20px 0 20px; max-width: 250px; background-color: #f9f9f9;">
+                style="display: inline-block; vertical-align: top; width: 100%; max-width: 270px;"
+                class="testimonial-column">
                 <tr>
-                  <td style="padding: 10px 0 20px 10px;">
-                    <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/sandra.png"
-                      alt="Sandra Robert" width="50" height="50" />
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding: 0 0 5px 10px;">
-                    <p
-                      style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 16px; line-height: 26px; color: #191919;">
-                      Best Company
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding: 0 10px 20px 10px;">
-                    <p class="text">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding: 0 0 0 10px;">
-                    <p
-                      style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 18px; line-height: 28px; color: #191919;">
-                      Sandra Robert
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding: 0 0 35px 10px;">
-                    <p
-                      style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; line-height: 24px; color: #595959;">
-                      YouTube
-                    </p>
+                  <td style="padding: 0 10px 30px 10px;" class="clear-padding">
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                      style="border-radius: 16px; background-color: #f9f9f9;">
+                      <tr>
+                        <td style="padding: 30px 0 20px 30px;">
+                          <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/sandra.png"
+                            alt="Sandra Robert" border="0" width="50" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 0 0 5px 30px;">
+                          <p
+                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 16px; line-height: 26px; color: #191919;">
+                            Best Company
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 0 30px 20px 30px;">
+                          <p class="text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been.
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 0 0 0 30px;">
+                          <p
+                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 18px; line-height: 28px; color: #191919;">
+                            Sandra Robert
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 0 0 35px 30px;">
+                          <p
+                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; line-height: 24px; color: #595959;">
+                            YouTube
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
               </table>
               <!--[if (gte mso 9)|(IE)]>
-                  </td>
-                  <td style="padding: 0 20px 0 20px;">
+              </td>
+              <td>
               <![endif]-->
-              <table align="right" border="0" cellspacing="0" cellpadding="0" role="presentation"
-                class="column"
-                style="border-radius: 16px; display: inline-block; vertical-align: top; padding: 20px 20px 0 20px; max-width: 250px; background-color: #f9f9f9;">
+              <table align="left" border="0" cellspacing="0" cellpadding="0" role="presentation"
+                style="display: inline-block; vertical-align: top; width: 100%; max-width: 270px;"
+                class="testimonial-column">
                 <tr>
-                  <td style="padding: 10px 0 20px 10px;">
-                    <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/oliver.png"
-                      alt="Oliver Charlotte" width="50" height="50" />
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding: 0 0 5px 10px;">
-                    <p
-                      style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 16px; line-height: 26px; color: #191919;">
-                      Very Good
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding: 0 10px 20px 10px;">
-                    <p class="text">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding: 0 0 0 10px;">
-                    <p
-                      style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 18px; line-height: 28px; color: #191919;">
-                      Oliver Charlotte
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding: 0 0 35px 10px;">
-                    <p
-                      style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; line-height: 24px; color: #595959;">
-                      Maool
-                    </p>
+                  <td style="padding: 0 10px 30px 10px;" class="clear-padding">
+                    <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                      style="border-radius: 16px; background-color: #f9f9f9;">
+                      <tr>
+                        <td style="padding: 30px 0 20px 30px;">
+                          <img src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/oliver.png"
+                            alt="Oliver Charlotte" border="0" width="50" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 0 0 5px 30px;">
+                          <p
+                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 16px; line-height: 26px; color: #191919;">
+                            Very Good
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 0 30px 20px 30px;">
+                          <p class="text">
+                            Lorem Ipsum is&nbsp;simply dummy text of&nbsp;the printing and typesetting industry. Lorem
+                            Ipsum has
+                            been.
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 0 0 0 30px;">
+                          <p
+                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 18px; line-height: 28px; color: #191919;">
+                            Oliver Charlotte
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 0 0 35px 30px;">
+                          <p
+                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; line-height: 24px; color: #595959;">
+                            Maool
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
               </table>
               <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
             </td>
           </tr>
-        </table>
-        <![endif]-->
-            </td>
-          </tr>
+          <!--spacer -->
           <!-- testimonial end -->
 
           <!-- blog -->
+          <!--spacer -->
+          <tr>
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
+            </td>
+          </tr>
           <tr>
             <td align="center" class="pt pb mobile-padding">
               <table border="0" cellspacing="0" cellpadding="0" role="presentation">
@@ -1576,8 +1873,8 @@
                   <td align="center" style="padding: 0 0 10px 0;">
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
-                        <td class="btn" style="width: 58px; height: 28px;">
-                          <a href="#!" target="_blank">
+                        <td style="width: 58px; height: 28px;" class="btn">
+                          <a href="#!" target="_blank" rel="noopener">
                             &nbsp;&nbsp;BLOG&nbsp;&nbsp;
                           </a>
                         </td>
@@ -1601,6 +1898,12 @@
                   </td>
                 </tr>
               </table>
+            </td>
+          </tr>
+          <!--spacer -->
+          <tr>
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
             </td>
           </tr>
           <tr>
@@ -1645,8 +1948,8 @@
                   <td>
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
-                        <td class="btn" style="width: 148px; height: 44px;">
-                          <a href="#!" target="_blank">
+                        <td style="width: 148px; height: 44px;" class="btn">
+                          <a href="#!" target="_blank" rel="noopener">
                             LEARN MORE
                           </a>
                         </td>
@@ -1656,19 +1959,25 @@
                 </tr>
               </table>
               <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
             </td>
           </tr>
-        </table>
-        <![endif]-->
+          <!--spacer -->
+          <tr>
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
             </td>
           </tr>
           <tr>
             <td align="center" class="pb mobile-padding">
               <!--[if (gte mso 9)|(IE)]>
-                <table align=" center" border="0" cellspacing="0" cellpadding="0" role="presentation" width: 100%;>
-                <tr>
-                <td>
-              <![endif]-->
+          <table align=" center" border="0" cellspacing="0" cellpadding="0" role="presentation" width: 100%;>
+          <tr>
+          <td>
+          <![endif]-->
               <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column article-img"
                 style="display: inline-block; vertical-align: top; padding: 0 10px 0 0; width: 100%; max-width: 210px;">
                 <tr>
@@ -1679,9 +1988,9 @@
                 </tr>
               </table>
               <!--[if (gte mso 9)|(IE)]>
-                  </td>
-                  <td>
-              <![endif]-->
+            </td>
+            <td>
+            <![endif]-->
               <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="column"
                 style="display: inline-block; padding: 0 0 0 10px; width: 100%; max-width: 310px;">
                 <tr>
@@ -1704,8 +2013,8 @@
                   <td>
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
-                        <td class="btn" style="width: 148px; height: 44px;">
-                          <a href="#!" target="_blank">
+                        <td style="width: 148px; height: 44px;" class="btn">
+                          <a href="#!" target="_blank" rel="noopener">
                             LEARN MORE
                           </a>
                         </td>
@@ -1716,14 +2025,26 @@
               </table>
               <!--[if (gte mso 9)|(IE)]>
             </td>
+            </tr>
+            </table>
+            <![endif]-->
+            </td>
           </tr>
-        </table>
-        <![endif]-->
+          <!--spacer -->
+          <tr>
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
             </td>
           </tr>
           <!-- blog-end -->
 
           <!-- help -->
+          <!--spacer -->
+          <tr>
+            <td style="padding: 15px 0 15px 0;" class="spacer">
+              <div style="width: 100%;"></div>
+            </td>
+          </tr>
           <tr>
             <td align="center" class="pt">
               <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="help-bg"
@@ -1732,8 +2053,8 @@
                   <td style="padding: 50px 0 10px 40px;">
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
-                        <td class="btn" style="width: 114px; height: 28px;">
-                          <a href="#!" target="_blank">&nbsp;&nbsp;WE&nbsp;HELP&nbsp;YOU&nbsp;&nbsp;</a>
+                        <td style="width: 114px; height: 28px;" class="btn">
+                          <a href="#!" target="_blank" rel="noopener">&nbsp;&nbsp;WE&nbsp;HELP&nbsp;YOU&nbsp;&nbsp;</a>
                         </td>
                       </tr>
                     </table>
@@ -1758,8 +2079,8 @@
                   <td style="padding: 0 0 50px 40px;">
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
-                        <td class="btn" style="width: 152px; height: 44px;">
-                          <a href="#!" target="_blank">GET STARTED</a>
+                        <td style="width: 152px; height: 44px;" class="btn">
+                          <a href="#!" target="_blank" rel="noopener">GET STARTED</a>
                         </td>
                       </tr>
                     </table>
@@ -1782,10 +2103,10 @@
                       <tr>
                         <td align="center">
                           <!--[if (gte mso 9)|(IE)]>
-                    <table align=" center" border="0" cellspacing="0" cellpadding="0" role="presentation" width: 100%;>
-                    <tr>
-                    <td>
-                  <![endif]-->
+                        <table align=" center" border="0" cellspacing="0" cellpadding="0" role="presentation" width: 100%;>
+                        <tr>
+                        <td>
+                        <![endif]-->
                           <table border="0" cellspacing="0" cellpadding="0" role="presentation"
                             class="column footer-address"
                             style="display: inline-block; vertical-align: top; padding: 0 20px 0 0; width: 100%; max-width: 200px;">
@@ -1793,7 +2114,7 @@
                               <td style="padding: 0 0 20px 0; font-size: 0; line-height: 0;">
                                 <img
                                   src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/footer-logo.png"
-                                  alt="logo" width="110" height="30" />
+                                  alt="logo" width="110" />
                               </td>
                             </tr>
                             <tr>
@@ -1811,31 +2132,31 @@
                                 <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                                   <tr>
                                     <td style="padding: 0 10px 0 0;">
-                                      <a style="text-decoration: none;" href="#!" target="_blank">
+                                      <a style="text-decoration: none;" href="#!" target="_blank" rel="noopener">
                                         <img
                                           src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/facebook.png"
-                                          alt="facebook" />
+                                          alt="facebook" border="0" width="30" />
                                       </a>
                                     </td>
                                     <td style="padding: 0 10px 0 0;">
-                                      <a style="text-decoration: none;" href="#!" target="_blank">
+                                      <a style="text-decoration: none;" href="#!" target="_blank" rel="noopener">
                                         <img
                                           src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/Instagram.png"
-                                          alt="insta" />
+                                          alt="insta" border="0" width="30" />
                                       </a>
                                     </td>
                                     <td style="padding: 0 10px 0 0;">
-                                      <a style="text-decoration: none;" href="#!" target="_blank">
+                                      <a style="text-decoration: none;" href="#!" target="_blank" rel="noopener">
                                         <img
                                           src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/link.png"
-                                          alt="link" />
+                                          alt="link" border="0" width="30" />
                                       </a>
                                     </td>
                                     <td>
-                                      <a style="text-decoration: none;" href="#!" target="_blank">
+                                      <a style="text-decoration: none;" href="#!" target="_blank" rel="noopener">
                                         <img
                                           src="https://raw.githubusercontent.com/vedinche/Images/refs/heads/main/Agency/twitter.png"
-                                          alt="twitter" />
+                                          alt="twitter" border="0" width="30" />
                                       </a>
                                     </td>
                                   </tr>
@@ -1844,12 +2165,12 @@
                             </tr>
                           </table>
                           <!--[if (gte mso 9)|(IE)]>
-                      </td>
-                      <td>
-                  <![endif]-->
+                          </td>
+                          <td>
+                          <![endif]-->
                           <table border="0" cellspacing="0" cellpadding="0" role="presentation"
                             class="column footer-contact"
-                            style="display: inline-block; vertical-align: top; padding: 0 20px 0 0; width: 100%; max-width: 190px;">
+                            style="display: inline-block; vertical-align: top; width: 100%; max-width: 190px;">
                             <tr>
                               <td style="padding: 0 0 20px 0; font-size: 0; line-height: 0;">
                                 <p
@@ -1892,15 +2213,15 @@
                             </tr>
                           </table>
                           <!--[if (gte mso 9)|(IE)]>
-                      </td>
-                      </tr>
-                    </table>
-                    <![endif]-->
+                          </td>
+                          </tr>
+                          </table>
+                          <![endif]-->
                         </td>
-                        <td style="vertical-align: top;">
+                        <td style="vertical-align: top; padding: 0 10px 0 0;">
                           <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                             <tr>
-                              <td style="padding: 0 0 20px 0; font-size: 0; line-height: 0;">
+                              <td style="padding: 0 0 20px 0;">
                                 <p
                                   style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 16px; line-height: 26px; color: #fff;">
                                   More Links
@@ -1909,32 +2230,32 @@
                             </tr>
                             <tr>
                               <td>
-                                <a href="#!" target="_blank"
-                                  style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #fff; text-decoration: none;">
+                                <a href="#!" target="_blank" rel="noopener"
+                                  style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #fff; text-decoration: none;">
                                   Help Center
                                 </a>
                               </td>
                             </tr>
                             <tr>
                               <td>
-                                <a href="#!" target="_blank"
-                                  style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #fff; text-decoration: none;">
+                                <a href="#!" target="_blank" rel="noopener"
+                                  style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #fff; text-decoration: none;">
                                   My Account
                                 </a>
                               </td>
                             </tr>
                             <tr>
                               <td>
-                                <a href="#!" target="_blank"
-                                  style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #fff; text-decoration: none;">
+                                <a href="#!" target="_blank" rel="noopener"
+                                  style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #fff; text-decoration: none;">
                                   Contact
                                 </a>
                               </td>
                             </tr>
                             <tr>
                               <td>
-                                <a href="#!" target="_blank"
-                                  style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #fff; text-decoration: none;">
+                                <a href="#!" target="_blank" rel="noopener"
+                                  style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #fff; text-decoration: none;">
                                   Privacy
                                 </a>
                               </td>
@@ -1945,13 +2266,25 @@
                     </table>
                   </td>
                 </tr>
+                <!--spacer -->
                 <tr>
-                  <td class="pt pb pl pr mobile-padding">
-                    <div style="width: 100%; height: 3px; background-color: #e1e1e1"></div>
+                  <td style="padding: 15px 0 15px 0;" class="spacer">
+                    <div style="width: 100%;"></div>
                   </td>
                 </tr>
                 <tr>
-                  <td class="pb pr pl mobile-padding">
+                  <td class="pl pr mobile-padding">
+                    <div style="width: 100%; height: 3px; background-color: #e1e1e1"></div>
+                  </td>
+                </tr>
+                <!--spacer -->
+                <tr>
+                  <td style="padding: 15px 0 15px 0;" class="spacer">
+                    <div style="width: 100%;"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom: 40px;" class="pr pl mobile-padding">
                     <table border="0" cellspacing="0" cellpadding="0" role="presentation"
                       style="width: 100%; max-width: 600px;">
                       <tr>
@@ -1962,8 +2295,9 @@
                           </p>
                         </td>
                         <td align="right">
-                          <a href="" target="_blank" class="unsubscribe"
-                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #fff; text-decoration: none;">
+                          <a href="#!" target="_blank" rel="noopener"
+                            style="margin: 0; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color: #fff; text-decoration: none;"
+                            class="unsubscribe">
                             Unsubscribe
                           </a>
                         </td>
